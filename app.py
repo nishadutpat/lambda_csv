@@ -5,7 +5,7 @@ import os
 def lambda_handler(event, context):
     s3 = boto3.client('s3')
     bucket_name = os.environ['BUCKET_NAME']
-    file_key = 'your-file.csv'  # Change this to your CSV file name
+    file_key = 'sample-csv-files-sample4.csv'  # Change this to your CSV file name
 
     try:
         # Fetch the file from S3
