@@ -81,7 +81,7 @@ resource "aws_lambda_function" "csv_reader_lambda" {
   
   environment {
     variables = {
-      BUCKET_NAME = aws_s3_bucket.bucket-for-task3.id
+      BUCKET_NAME = aws_s3_bucket.buck-for-task3.id
     }
   }
 }
