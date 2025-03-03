@@ -73,7 +73,7 @@ resource "aws_cloudwatch_log_group" "lambda_log_group" {
 
 resource "aws_lambda_function" "csv_reader_lambda" {
   function_name    = "csv_reader_lambda"
-  role            = aws_iam_role.lambda_exec_role.arn
+  role            = aws_iam_role.lambda_execs_role.arn
   runtime         = "python3.8"
   handler         = "lambda_function.lambda_handler"
   filename        = "lambda.zip"
